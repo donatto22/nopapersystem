@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "description": "Administrador"
+        },
+
+        {
+            "id": 2,
+            "description": "Creación de Usuarios"
+        },
+
+        {
+            "id": 3,
+            "description": "Mesa de Ayuda"
+        },
+
+        {
+            "id": 4,
+            "description": "Profesional"
+        },
+
+        {
+            "id": 5,
+            "description": "Punto de Control"
+        },
+
+        {
+            "id": 6,
+            "description": "Soporte Trámite"
+        },
+
+        {
+            "id": 7,
+            "description": "Trámite documentario"
+        },
+
+        {
+            "id": 8,
+            "description": "Trámite documentario (P)"
+        }
+    ]
+}

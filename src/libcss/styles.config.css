@@ -1,0 +1,207 @@
+/* Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Normalize */
+@import url("./normalize.css");
+
+:root {
+    --background-color: #f8f9fa;
+    --background-color-dark: #282b30;
+
+    --div: #36393e;
+    --div2: #5e6269;
+    --div-dark: #282b30;
+    --div-dark-transparent: #282b3042;
+    --div-dark-transparent2: #282b3056;
+    --div-dark-transparent3: #282b3089;
+}
+
+:root {
+    --red-dark: #ea2c1a;
+    --blue-dark: #0f283d;
+    --black-dark: #191919;
+    --paypal-dark: #163152;
+    --paypal: #1E477A;
+    --patreon: #f96854;
+}
+
+/* Undraw Colors */
+:root {
+    --undraw-handcraft-green: #A0FFF0;
+    --undraw-handcraft-red: #F5A9C4;
+    --undraw-handcraft-violet: #CBC8FD;
+    --undraw-handcraft-blue: #A9AFF5;
+    --undraw-handcraft-yellow: #F7DDB4;
+
+    --undraw-green: #00BFA6;
+    --undraw-orange: #F9A826;
+    --undraw-violet: #6C63FF;
+    --undraw-blue: #536DFE;
+    --undraw-red: #F50057;
+    --undraw-skyblue: #00B0FF;
+}
+
+/* Bootstrap Colors */
+:root {
+    /* Hidden colors */
+    --bootstrap-purple: #563d7c;
+    --bootstrap-skyblue: #5bc0de;
+    --bootstrap-yellow: #f0ad4e;
+
+    /* Basic colors */
+    --bootstrap-bg-primary: #007bff;
+    --bootstrap-bg-info: #17a2b8;
+    --bootstrap-bg-light: #f8f9fa;
+    --bootstrap-bg-danger: #dc3545;
+    --bootstrap-bg-dark: #343a40;
+}
+
+/* Firebase Colors */
+:root {
+    --firebase-yellow: #FFCA28;
+    --firebase-amber: #FFA000;
+    --firebase-orange: #F57C00;
+    --firebase-coreal: #FF8A65;
+    --firebase-gray: #ECEFF1;
+    --firebase-navy-blue: #2C384A;
+    --firebase-dark-navy-blue: #222b39;
+}
+
+/* Discord colors */
+:root {
+    --discord-blue2:#b5ccf1;
+    --discord-blue: #7289da;
+    --discord-black1: #424549;
+    --discord-black2: #36393e;
+    --discord-black3: #282b30;
+    --discord-black4: #040405;
+}
+
+:root {
+    --default-shadow-gray: #a6a6a6;
+    --default-purple: #373295;
+    --default-orange: #eb9e5c;
+    --default-yellow: #F0F0A8;
+    --default-green: #9bd4ae;
+    --default-black: #404040;
+    --default-white: #fcfcfc;
+    --default-roxa: #f0a4ed;
+    --default-blue: #1B3C59;
+    --default-pink: #F2A999;
+    --default-red: #f84e3f;
+}
+
+/* the same color but more clear */
+:root {
+    --shadow-clear: #d9d9d9;
+    --red-clear: #fde9e7;
+    --white-clear: #fafafa;
+    --orange-clear: #ffc999;
+    --yellow-clear: #ffff80;
+}
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito';
+    background-color: var(--background-color);
+    min-height: 100vh;
+    font-size: 18px;
+    overflow: hidden;
+    /* background: repeating-linear-gradient( 45deg, #eeeeee, #eeeeee 4px, #f8f9fa 4px, #f8f9fa 20px ); */
+    background: linear-gradient(110deg, rgba(21,22,74,1) 0%, rgba(255,65,65,1) 50%, rgba(255,182,80,1) 100%);
+}
+
+img {
+    width: 100%;
+    pointer-events: none;
+    vertical-align: middle;
+}
+
+a, li, ul, ol {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    cursor: pointer !important;
+    width: fit-content;
+}
+
+label {
+    display: block;
+}
+
+input {
+    outline: none;
+    display: block;
+}
+
+[pointer] {
+    cursor: pointer;
+}
+
+pre {
+    overflow-y: scroll;
+    font-size: 14px !important;
+}
+
+code {
+    border-radius: 4px;
+}
+
+pre::before, pre::after {
+    box-shadow: 0 0 1px black !important;
+    display: none !important;
+}
+
+/* Scroll */
+/* la barra completa */
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* el scroll */
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--discord-black4);
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--discord-black1);
+}
+
+/* botones para la tabla */
+.table-button {
+    border: 1px solid var(--shadow-clear);
+    color: var(--shadow-clear);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.table-button-delete:hover {
+    color: var(--undraw-handcraft-red);
+    border-color: var(--undraw-handcraft-red);
+    background-color: var(--div-dark-transparent);
+}
+
+.table-button-edit:hover {
+    color: var(--undraw-handcraft-yellow);
+    border-color: var(--undraw-handcraft-yellow);
+    background-color: var(--div-dark-transparent);
+}

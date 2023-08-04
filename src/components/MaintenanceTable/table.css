@@ -1,0 +1,21 @@
+/* botones para la tabla */
+.table-button {
+    border: 1px solid var(--shadow-clear);
+    color: var(--shadow-clear);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.table-button-delete:hover {
+    color: var(--undraw-handcraft-red);
+    border-color: var(--undraw-handcraft-red);
+    background-color: var(--div-dark-transparent);
+}
+
+.table-button-edit:hover {
+    color: var(--undraw-handcraft-yellow);
+    border-color: var(--undraw-handcraft-yellow);
+    background-color: var(--div-dark-transparent);
+}

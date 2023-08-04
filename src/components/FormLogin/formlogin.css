@@ -1,0 +1,35 @@
+/* clase que agrega el filtro de difuminado */
+.filter-blur {
+    backdrop-filter: blur(10px);
+}
+
+/* la esfera azul */
+.boxlogin::after {
+    content: '';
+    background: linear-gradient(336deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: -2;
+    transform: translate(36vw, 26vh);
+    box-shadow: 0 0 200px #020024c1;
+}
+
+/* la esfera roja */
+.boxlogin::before {
+    content: '';
+    background: linear-gradient(339deg, rgba(2,0,36,1) 0%, rgba(191,0,0,1) 35%, rgba(255,195,110,1) 100%);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -2;
+    transform: translate(55vw, 55vh);
+    box-shadow: 0 0 200px #02002495;
+}
+
+/* color del placeholder del input en el login */
+.placeholder-white::placeholder {
+    color: var(--shadow-clear);
+}

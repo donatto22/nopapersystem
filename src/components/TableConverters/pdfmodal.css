@@ -1,0 +1,86 @@
+/* el boton que abre el modal */
+.openModal {
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid var(--shadow-clear);
+    cursor: pointer;
+    color: var(--shadow-clear);
+}
+
+/* el fondo del modal */
+#modalOverlay {
+    background-color: var(--div-dark-transparent2);
+    backdrop-filter: blur(2px);
+}
+
+/* el contenido del modal */
+.modalContent {
+    width: 300px !important;
+    background-color: var(--div-dark);
+    border-radius: 20px;
+    margin: 2em auto 0;
+    padding: 1.4em 2em;
+    color: var(--default-shadow-gray);
+}
+
+/* estilos para el botón */
+#modalCloseButton {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--shadow-clear);
+    border: 1px solid var(--black-dark);
+    padding: 6px 8px;
+}
+
+/* estilos para el input */
+#inputModal {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 10px 0;
+    text-indent: 10px;
+    color: var(--shadow-clear);
+    border: 1px solid var(--div);
+}
+
+/* estilos para el select del modal */
+#selectModal {
+    background-color: transparent;
+    border: 1px solid var(--div);
+    color: var(--shadow-clear);
+    font-size: 18px;
+}
+
+/* estilo del select y del input al 
+estar activos, mientras el usuario 
+tenga activo el bloque */
+#selectModal:focus, #inputModal:focus {
+    border-color: var(--div2);
+}
+
+#selectModal option {
+    background-color: var(--div-dark);
+    border: 0;
+    padding: 1em;
+}
+
+/* estilos para los botones del pie de página del modal */
+.buttonFooterModal {
+    background-color: transparent;
+    border-radius: 6px;
+    color: var(--default-shadow-gray);
+    border: 2px solid var(--div);
+    padding: 8px 16px;
+}
+
+
+.buttonFooterModal:hover {
+    background-color: var(--div2);
+    color: var(--shadow-clear);
+    cursor: pointer;
+}

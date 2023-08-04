@@ -1,0 +1,31 @@
+.accordion-button-hover:hover, .accordion-item:hover {
+    box-shadow: 0 2px 0px rgb(150, 150, 150);
+}
+
+/* hover para el link dentro del acordeón */
+.accordion-panel-hover:hover {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.accordion-item {
+    padding-bottom: 10px;
+}
+
+/* los links */
+.aside-link-hyperlink {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-button-link {
+    display: flex;
+}
+
+.aside-link-hyperlink svg, .accordion-button-link svg {
+    margin-right: 8px;
+    font-size: 20px !important;
+    width: 20px !important;
+}

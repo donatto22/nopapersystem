@@ -1,0 +1,17 @@
+#profile-menu {
+    color: black !important;
+}
+
+#profile-menu > button {
+    border: 1px solid;
+    padding: 8px 1em;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#profile-menu > button:hover {
+    background-color: #2e749d;
+    border-color: #2e749d;
+}

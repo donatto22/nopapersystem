@@ -1,0 +1,45 @@
+#controlpanelayout {
+    --margin: 1em;
+    --header-height: 60px;
+
+    /* background-color: rgb(255, 234, 234); */
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+    margin: var(--margin);
+}
+
+/* el contenido de abajo de la página */
+#container {
+    --aside-links-width: 220px;
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    height: calc(100% - (var(--header-height)) - 1em);
+    gap: 1em;
+}
+
+/* el div que contiene los links */
+#asideLinks {
+    background-color: var(--background-color-dark); 
+    width: var(--aside-links-width);
+    height: 100%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: width .2s;
+    box-shadow: 0 0 80px -20px var(--discord-black4);
+}
+
+/* el div que cambiará de contenido */
+#min-container {
+    --a: 220px;
+    width: calc(100% - (var(--aside-links-width)) - 1em);
+    /* background-color: var(--div); */
+    /* backdrop-filter: blur( 10px ); */
+    overflow-y: scroll;
+    transition: width .2s;
+}
+
+.toggleMenu {
+    --aside-links-width: 52px;
+}

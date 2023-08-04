@@ -1,0 +1,53 @@
+/* parte con el ícono, nombre y boton */
+#header {
+    width: 100%;
+    display: flex;
+    /* background-color: var(--div-dark); */
+    /* backdrop-filter: blur( 4px ); */
+    border-radius: 10px;
+    min-height: var(--header-height);
+    color: white;
+}
+
+#header-leftside {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+#header-leftside img {
+    width: 60px;
+}
+
+#header-rightside {
+    width: calc(100% - 220px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* los botones detro del header */
+.button-header {
+    font-size: 20px;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.button-header svg {
+    cursor: pointer;
+}
+
+/* el botón de modo oscuro */
+.button-header svg:last-child {
+    font-size: 16px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.modal-profile-header {
+    margin-right: 1em;
+}
