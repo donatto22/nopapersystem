@@ -19,7 +19,7 @@ const ControlPanelLayout = () => {
     }
 
     return (
-        auth.rol == 'user' ? (
+        auth.token ? (
             <div id="controlpanelayout">
                 <Header menuFunction={() => { toogleMenu() }}/>
 
