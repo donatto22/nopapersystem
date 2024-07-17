@@ -3,10 +3,6 @@ import MinLink from "./MinLink"
 const LinksMantenimientos = () => {
     return (
         <>
-            <MinLink title='Modificar clave' />
-            <MinLink title='Correlativo Interno' />
-            <MinLink title='Correlativo Salida' />
-            <MinLink title='Correlativo Profesional' />
             <MinLink path="maintenance/profiles" title='Perfiles' />
             <MinLink path="maintenance/offices" title='Oficinas' />
             <MinLink path="maintenance/workers" title='Trabajadores' />

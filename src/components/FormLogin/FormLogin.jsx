@@ -1,4 +1,4 @@
-import { FormControl, FormErrorMessage, Input, Box, InputGroup, Button } from '@chakra-ui/react'
+import { FormControl, Input, Box, InputGroup, Button } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 
 import { FaUser, FaLock } from 'react-icons/fa'
@@ -14,16 +14,16 @@ const FormLogin = () => {
         e.preventDefault()
 
         const values = {
-            email: e.target.email.value,
+            username: e.target.username.value,
             password: e.target.password.value
         }
 
-        const url = 'https://api-ecommerce.ed.team/api/v1/public/login'
+        const url = 'https://dummyjson.com/auth/login'
 
         axios.post(url, values).then(resp => {  
             console.log(resp)
 
-            authToken.setToken(resp.data.data.token)
+            authToken.setToken(resp.data.token)
             navigate('/')
 
         }).catch((err) => {
@@ -40,7 +40,7 @@ const FormLogin = () => {
                     <InputGroup fontSize='1.2em' display='flex' alignItems='center'>
                         <FaUser color='#04040580' />
                         <Input w='100%' color='white' bgColor='transparent' py='.6em' px='1em' placeholder='Usuario' ml='10'
-                            borderTop='0' borderLeft='0' borderRight='0' borderColor='#040405' name='email' className='placeholder-white'/>
+                            borderTop='0' borderLeft='0' borderRight='0' borderColor='#040405' name='username' className='placeholder-white'/>
                     </InputGroup>
                 </FormControl>
 
